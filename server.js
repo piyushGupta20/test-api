@@ -4,6 +4,7 @@ const app = express();
 
 app.get('/:id', (req, res)=>{
 console.log("customer id: ", req.params.id)
+res.json({message: "success"})
 })
 
 const port = 8000;
